@@ -1,20 +1,15 @@
 package hello;
 
-public class Greeting {
+import com.google.auto.value.AutoValue;
 
-    private final long id;
-    private final String content;
+@AutoValue
+public abstract class Greeting {
 
-    public Greeting(long id, String content) {
-        this.id = id;
-        this.content = content;
+    public static Greeting create(long id, String content) {
+        return new AutoValue_Greeting(id, content);
     }
 
-    public long getId() {
-        return id;
-    }
+    public abstract long id();
 
-    public String getContent() {
-        return content;
-    }
+    public abstract String content();
 }
