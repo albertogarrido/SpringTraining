@@ -2,3 +2,6 @@ SpringRestGuide/.idea/*
 SpringRestGuide/.idea
 SpringRestGuide/.gradle/*
 SpringRestGuide/.gradle
+SpringRestGuide/build/*
+SpringRestGuide/build
+.gradle
